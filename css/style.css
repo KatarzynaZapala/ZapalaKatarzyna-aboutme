@@ -2,11 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
-    html10PX {
-        font-size: 10px;
-    }
+html {
+    font-size: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
 
-    body {
-        font-size: 1.6rem;
-    }
+body {
+    font-size: 1.6rem;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #050505;
+    background-image: url(../images/Kasia.jpg);
+    background-position: bottom 20% left 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shadow {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.welcome {
+    position: absolute;
+    padding: 15% 10px;
+    color: rgb(240, 240, 240);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+h1.welcome_name {
+    font-size: 23px;
+    text-align: center;
+    letter-spacing: 0.8px;
+
+}
+
+h2.welcome_function {
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.welcome_btn {
+    display: block;
+    margin: 30px 0 0 33%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    padding: 5px 30px;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: transparent;
+    color: rgb(240, 240, 240);
+    border-radius: 5px;
+    letter-spacing: 4px;
+
+}
