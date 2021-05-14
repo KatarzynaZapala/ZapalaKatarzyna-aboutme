@@ -70,5 +70,68 @@ h2.welcome_function {
 .welcome_btn:hover {
     background-color: #2C251E;
     color: rgb(255, 255, 255);
+}
+
+@media (orientation: portrait) and (min-width:460px) {
+    .welcome {
+        padding: 10% 5%;
+    }
+
+    h1.welcome_name {
+        font-size: 30px;
+    }
+
+    .welcome_btn {
+        font-size: 20px;
+        padding: 5px 40px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:460px) {
+    h1.welcome_name {
+        position: absolute;
+        bottom: 25%;
+        right: 7%;
+        font-size: 23px;
+    }
+
+    h2.welcome_function {
+        position: absolute;
+        bottom: 20%;
+        right: 7%;
+        font-size: 18px;
+    }
+
+    .welcome_btn {
+        right: 7%;
+    }
+
+}
+
+@media (orientation:landscape) and (min-width:460px) {
+    .welcome {
+        padding: 5%;
+    }
+
+    h1.welcome_name {
+        position: absolute;
+        bottom: 25%;
+        left: 4%;
+        font-size: 17px;
+    }
+
+    h2.welcome_function {
+        position: absolute;
+        bottom: 20%;
+        left: 4%;
+        font-size: 16px;
+    }
+
+    .welcome_btn {
+        left: 4%;
+        padding: 1px 20px;
+        font-size: 14px;
+    }
+
 
 }
