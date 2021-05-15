@@ -56,7 +56,7 @@ h2.welcome_function {
     position: absolute;
     bottom: 10%;
     right: 10%;
-    padding: .5rem 3rem;
+    padding: .5rem 3rem .6rem;
     border: .1rem solid rgb(240, 240, 240);
     border-radius: .5rem;
     background-color: transparent;
@@ -80,7 +80,7 @@ h2.welcome_function {
 
     .welcome_btn {
         font-size: 2rem;
-        padding: .5rem 4rem;
+        padding: .5rem 4rem .6rem;
     }
 }
 
@@ -93,6 +93,7 @@ h2.welcome_function {
         position: absolute;
         bottom: 25%;
         left: 3%;
+        padding-bottom: .8rem;
         font-size: 1.7rem;
     }
 
@@ -105,7 +106,7 @@ h2.welcome_function {
 
     .welcome_btn {
         left: 3%;
-        padding: .1rem 2rem;
+        padding: .1rem 2rem .2rem;
         font-size: 1.4rem;
     }
 }
@@ -113,15 +114,15 @@ h2.welcome_function {
 
 @media(orientation:portrait) and (min-width:600px) {
     h1.welcome_name {
-        bottom: 25%;
+        /*        bottom: 25%;*/
         right: 7%;
-        font-size: 2.8rem;
+        font-size: 3.3rem;
     }
 
     h2.welcome_function {
-        bottom: 20%;
+        /*        bottom: 20%;*/
         right: 7%;
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
 
     .welcome_btn {
@@ -141,20 +142,20 @@ h2.welcome_function {
     }
 
     h1.welcome_name {
-        bottom: 25%;
+        /*        bottom: 25%;*/
         left: 3%;
         font-size: 2.4rem;
     }
 
     h2.welcome_function {
-        bottom: 20%;
+        /*        bottom: 20%;*/
         left: 3%;
         font-size: 2rem;
     }
 
     .welcome_btn {
         left: 3%;
-        padding: .1rem 2rem;
+        padding: .1rem 2rem .2rem;
         font-size: 1.7rem;
     }
 }
@@ -163,20 +164,20 @@ h2.welcome_function {
 
 
     h1.welcome_name {
-        bottom: 25%;
+        /*        bottom: 25%;*/
         right: 7%;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     h2.welcome_function {
-        bottom: 20%;
+        /*        bottom: 20%;*/
         right: 7%;
-        font-size: 3rem;
+        font-size: 2.9rem;
     }
 
     .welcome_btn {
         right: 7%;
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 }
 
@@ -209,13 +210,6 @@ h2.welcome_function {
     }
 
     .welcome_btn {
-        bottom: 13%;
-        left: 4rem;
-        padding: .5rem 4rem .7rem;
-        font-size: 2rem;
-        letter-spacing: .7rem;
-        font-family: 'Titillium Web', sans-serif;
-        color: rgb(240, 240, 240);
         cursor: pointer;
         transition: .5s;
     }
@@ -228,40 +222,71 @@ h2.welcome_function {
 
 
 @media (orientation:portrait) and (min-width:1024px) {
-    header {
-        background-position: right;
-    }
-
-    .welcome {
-        padding: 6% 3%;
-    }
 
     h1.welcome_name {
-        bottom: 28%;
-        /*        left: 4rem;*/
+        /*        bottom: 28%;*/
         font-size: 5rem;
-        letter-spacing: 2.5px;
     }
 
     h2.welcome_function {
-        bottom: 23%;
         left: 4rem;
         font-size: 4rem;
-        letter-spacing: 1px;
     }
 
     .welcome_btn {
         bottom: 12%;
         right: 9rem;
-        padding: .5rem 4rem .7rem;
         font-size: 4rem;
         letter-spacing: .7rem;
-        font-family: 'Titillium Web', sans-serif;
-        color: rgb(240, 240, 240);
-        cursor: pointer;
-        transition: .5s;
+    }
+}
+
+@media(min-width: 1280px) {
+    header {
+        background-color: #0B0E09;
+        background-position: right top 0;
+        background-size: contain;
+        /*        background-repeat: repeat;*/
     }
 
+    .shadow {
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    /*
+    .welcome {
+        padding: 6% 3%;
+    }
+*/
+
+    h1.welcome_name {
+        bottom: 36%;
+        /*        left: 4rem;*/
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
+
+    h2.welcome_function {
+        bottom: 31%;
+        /*        left: 4rem;*/
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
+    .welcome_btn {
+        bottom: 23%;
+        cursor: pointer;
+        transition: .5s;
+        font-size: 2.3rem;
+        padding: .2rem 5rem .3rem;
+        letter-spacing: 9px;
+    }
+
+    .welcome_btn:hover {
+        background-color: #2C251E;
+        color: rgb(255, 255, 255);
+    }
+}
 
 }
 
