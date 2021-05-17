@@ -14,10 +14,12 @@ body {
 }
 
 header {
-    z-index: 1;
     position: relative;
+    z-index: 1;
     height: 100vh;
-    background-color: #000000;
+    max-width: 192rem;
+    margin: 0 auto;
+    background-color: #0B0E09;
     background-image: url(../images/Kasia.jpg);
     background-repeat: no-repeat;
     background-position: right;
@@ -29,6 +31,7 @@ header {
     position: absolute;
     height: 100vh;
     width: 100vw;
+    max-width: 192rem;
     background-color: rgba(0, 0, 0, .6);
 }
 
@@ -65,10 +68,7 @@ h2.welcome_function {
     letter-spacing: .4rem;
     font-family: 'Titillium Web', sans-serif;
     color: rgb(240, 240, 240);
-    cursor: pointer;
-    transition: .5s;
 }
-
 
 @media (orientation: portrait) and (min-width:460px) {
     .welcome {
@@ -234,8 +234,16 @@ h2.welcome_function {
         right: 9rem;
         font-size: 4rem;
         letter-spacing: .7rem;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .welcome_btn:hover {
+        background-color: #2C251E;
+        color: rgb(255, 255, 255);
     }
 }
+
 
 @media(min-width: 1280px) {
 
@@ -259,17 +267,18 @@ h2.welcome_function {
         padding: .2rem 5rem .3rem;
         font-size: 2.3rem;
         letter-spacing: 9px;
-        cursor: pointer;
-        transition: .5s;
-    }
-
-    .welcome_btn:hover {
-        background-color: #2C251E;
-        color: rgb(255, 255, 255);
     }
 }
 
 @media(min-width: 1600px) {
+    header {
+        background-color: #0B0E09;
+        background-image: url(../images/Kasia.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        background-attachment: fixed;
+    }
 
     h1.welcome_name {
         left: 4rem;
@@ -289,7 +298,6 @@ h2.welcome_function {
         padding: .2rem 6rem .3rem;
         font-size: 3rem;
     }
-
 }
 
 section {
