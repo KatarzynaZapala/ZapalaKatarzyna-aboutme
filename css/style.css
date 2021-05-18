@@ -311,7 +311,7 @@ section {
 .features {
     padding: 0 8%;
     text-align: center;
-    height: 25%;
+    /*    height: 100%;*/
 }
 
 .features h1 {
@@ -324,7 +324,8 @@ section {
 }
 
 .feature {
-    padding-top: 15%;
+
+
     height: 25%;
 }
 
@@ -335,7 +336,7 @@ section {
 
 .fas,
 .fab {
-    padding: 3%;
+    padding: 0 3%;
 }
 
 .fa-html5,
@@ -362,4 +363,119 @@ section {
 
 .feature p {
     display: none;
+}
+
+@media (orientation:landscape) and (min-width:480px) {
+
+    .features {
+        padding: 0 1%;
+        text-align: center;
+    }
+
+    .features h1 {
+        padding: 5% 0;
+        font-size: 2rem;
+    }
+
+    .feature {
+        display: inline-block;
+        width: 45%;
+        height: 35%;
+        padding: 2% 3%;
+    }
+
+    .icons {
+        font-size: 2.8rem;
+    }
+
+    .mobile {
+        font-size: 1.8rem;
+    }
+}
+
+@media (orientation:portrait) and (min-width:600px) {
+
+    .features h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .fas,
+    .fab {
+        font-size: 4.5rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+        margin: 0 auto;
+        font-size: 3rem;
+    }
+}
+
+@media (orientation:landscape) and (min-width:640px) {
+
+    .features {
+        padding: 0 1%;
+    }
+
+    .features h1 {
+        font-size: 2.1rem;
+    }
+
+
+    .icons {
+        font-size: 2.8rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+        font-weight: 300;
+    }
+}
+
+@media (orientation:landscape) and (min-width:720px) {
+
+    .features {
+        padding: 0 1% 2%;
+    }
+
+
+    .features h1 {
+        font-size: 2.3rem;
+        text-align: left;
+        padding-left: 9%;
+    }
+
+    .feature {
+        width: 100vw;
+        height: 23%;
+    }
+
+    .icons {
+        width: 30%;
+        font-size: 3.5rem;
+        float: left;
+        padding: 0 2rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        float: left;
+        font-size: 1.8rem;
+        line-height: 3.7rem;
+        font-weight: 600;
+    }
 }
