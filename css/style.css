@@ -584,7 +584,7 @@ section {
     }
 }
 
-@media (min-width:1024px) and (min-height: 723px) {
+@media (orientation: landscape) and (min-width:1024px) and (min-height: 723px) {
 
 
 
