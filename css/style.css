@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 html {
     font-size: 10px;
     font-family: 'Titillium Web', sans-serif;
@@ -315,13 +321,9 @@ section {
 }
 
 .features {
-
     padding: 0 8%;
     text-align: center;
     max-width: 1600px;
-
-
-
 }
 
 .features h1 {
@@ -380,7 +382,6 @@ section {
 
     .features {
         padding: 0 1%;
-        /*        max-width: 1600px;*/
         margin: 0 auto;
         text-align: center;
     }
@@ -475,12 +476,6 @@ section {
         overflow: hidden;
     }
 
-    .clearfix::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
     .icons {
         width: 30%;
         padding: 0 2rem;
@@ -529,7 +524,6 @@ section {
 
     .features {
         width: 100vw;
-        /*        max-width: 192rem;*/
         padding: 3%;
         overflow: hidden;
 
@@ -585,10 +579,6 @@ section {
 }
 
 @media (orientation: landscape) and (min-width:1024px) and (min-height: 723px) {
-
-
-
-
 
     .features h1 {
         height: 15%;
