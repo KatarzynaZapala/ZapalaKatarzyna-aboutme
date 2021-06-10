@@ -460,7 +460,7 @@ section {
 @media (orientation:landscape) and (min-width:720px) {
 
     .features {
-        padding: 0 1% 2%;
+        padding: 3% 1% 5%;
     }
 
 
@@ -523,7 +523,8 @@ section {
     }
 
     .features {
-        width: 100vw;
+        width: 80vw;
+        height: 80vh;
         padding: 3%;
         overflow: hidden;
 
@@ -691,14 +692,14 @@ section {
 }
 
 .project .about {
-    padding: 10px 20px 30px;
+    padding: 10px 20px 20px;
     color: rgb(240, 240, 240);
     margin-bottom: 35px;
 }
 
 .about h2 {
     border-bottom: 1px solid white;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 200;
 }
 
@@ -710,7 +711,7 @@ section {
 
 @media (orientation: portrait) and (min-width:460px) {
     .project .about {
-        padding: 5px 20px 20px;
+        padding: 20px 20px 30px;
         color: rgb(240, 240, 240);
     }
 
@@ -721,10 +722,45 @@ section {
     }
 
     .about p {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 18px;
         font-weight: 300;
         line-height: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (orientation: landscape) and (min-width:812px) {
+    .about h2 {
+        border-bottom: 1px solid white;
+        font-size: 25px;
+        font-weight: 200;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .about p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25px;
+        padding: 0 20px 10px 30px;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width:1024px) {
+    .portfolio h1 {
+        font-size: 43px;
+    }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 25px;
+        line-height: 37px;
+
     }
 }
 
@@ -746,6 +782,7 @@ section {
         margin: 0 auto 15px;
     }
 
+
     .web img {
         display: block;
         height: 300px;
@@ -754,7 +791,8 @@ section {
     .div .about {
         display: block;
         height: 100%;
-
+        /*        padding: 20px 20px 20px;
+      */
     }
 
     .web,
@@ -762,6 +800,10 @@ section {
         width: 50%;
         float: left;
         height: 300px;
+    }
+
+    .portfolio .project:nth-last-of-type(even) .web {
+        float: right;
     }
 
     .about h2 {
@@ -782,6 +824,9 @@ section {
     }
 
 }
+
+
+
 
 @media (orientation: landscape) and (min-width:1280px) {
 
