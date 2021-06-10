@@ -633,6 +633,8 @@ section {
     .features {
         margin-top: 5%;
         min-height: 500px;
+        max-width: 1600px;
+        max-height: 80vh;
     }
 
     .features h1 {
@@ -646,6 +648,7 @@ section {
 }
 
 .portfolio {
+
     height: 100%;
     background-color: #1a1a1a;
 }
@@ -657,6 +660,10 @@ section {
     line-height: 80px;
     text-transform: uppercase;
     color: rgb(240, 240, 240);
+}
+
+.project {
+    max-width: 1600px;
 }
 
 
@@ -686,7 +693,7 @@ section {
 .project .about {
     padding: 10px 20px 30px;
     color: rgb(240, 240, 240);
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .about h2 {
@@ -721,82 +728,104 @@ section {
     }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width:1024px) {
 
+    .portfolio h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: rgb(240, 240, 240);
+        letter-spacing: 10px;
+    }
 
 
     .project {
-        width: 85%;
-        margin: 20px auto 0;
+        width: 90%;
+        margin: 0 auto 15px;
     }
 
     .web img {
         display: block;
+        height: 300px;
     }
 
     .div .about {
         display: block;
         height: 100%;
+
     }
 
     .web,
     .about {
         width: 50%;
         float: left;
-    }
-
-
-
-
-    /*
-    .portfolio {
-        position: relative;
-        margin: 0 auto;
-    }
-
-
-    .portfolio .project {
-        width: 90%;
-        margin: 0 auto;
-        height: 25%;
-
-    }
-
-    .clearfix:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-
- 
-
-    .project .web {
-
-            padding: 10px 0 0;
-        background-color: white;
-        font-size: 0;
-    }
-
-
-
-    .project .about {
-        padding: 10px 20px 30px;
-        color: rgb(240, 240, 240);
-        margin-bottom: 20px;
+        height: 300px;
     }
 
     .about h2 {
         border-bottom: 1px solid white;
         font-size: 28px;
         font-weight: 200;
+        padding-left: 20px;
+        padding-bottom: 15px;
     }
 
     .about p {
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 300;
+        line-height: 25px;
+        padding-left: 20px;
+        padding-top: 30px;
     }
-*/
 
+}
+
+@media (orientation: landscape) and (min-width:1280px) {
+
+    .project {
+        width: 85%;
+        margin: 0 auto 15px;
+    }
+
+    .web img {
+        display: block;
+        height: 350px;
+    }
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+        height: 350px;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1470px) {
+    .project {
+        width: 80%;
+        margin: 0 auto 15px;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1620px) {
+    .project {
+        width: 80%;
+        margin: 0 auto 15px;
+    }
+
+
+    .web img {
+        display: block;
+        height: 400px;
+    }
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+        height: 400px;
+    }
 }
