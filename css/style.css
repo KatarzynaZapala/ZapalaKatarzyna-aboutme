@@ -846,7 +846,12 @@ section {
         float: left;
         height: 350px;
     }
+
+    .project .about {
+        padding: 25px 20px;
+    }
 }
+
 
 @media (orientation: landscape) and (min-width:1470px) {
     .project {
@@ -857,7 +862,7 @@ section {
 
 @media (orientation: landscape) and (min-width:1620px) {
     .project {
-        width: 80%;
+        width: 70%;
         margin: 0 auto 15px;
     }
 
@@ -872,5 +877,16 @@ section {
         width: 50%;
         float: left;
         height: 400px;
+    }
+
+    .project .about {
+        padding: 40px 20px;
+
+    }
+
+    .about p {
+        letter-spacing: 1px;
+        line-height: 30px;
+
     }
 }
