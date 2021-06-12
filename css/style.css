@@ -892,7 +892,7 @@ section {
 
 .motto {
     position: relative;
-    font-size: 30px;
+    font-size: 3rem;
     padding-top: 31%;
     padding-bottom: 20%;
     text-align: center;
@@ -900,15 +900,36 @@ section {
 
 .text {
     position: relative;
-    padding: 0 20px;
+    padding: 0 2rem;
     text-align: center;
     line-height: 150%;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .portfolio .project:nth-of-type(3) > .about {
     margin-bottom: 0;
 }
 
-@media (orientation: portrait) and (min-width:393px) {}
+@media (orientation: portrait) and (min-width:393px) {
+    .motto {
+        font-size: 3.3rem;
+    }
+
+    .text {
+        padding: 0 2.5rem;
+        font-size: 2.3rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width:600px) {
+    .motto {
+        font-size: 4rem;
+        letter-spacing: 3px;
+    }
+
+    .text {
+        padding: 0 3.1rem;
+        font-size: 3.5rem;
+    }
+}
