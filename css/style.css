@@ -32,7 +32,6 @@ header {
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-
 }
 
 .shadow {
@@ -870,3 +869,46 @@ section {
         line-height: 3rem;
     }
 }
+
+.slogan {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/sunset-1117008_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.dark {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .4);
+    overflow: hidden;
+}
+
+.motto {
+    position: relative;
+    font-size: 30px;
+    padding-top: 31%;
+    padding-bottom: 20%;
+    text-align: center;
+}
+
+.text {
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.portfolio .project:nth-of-type(3) > .about {
+    margin-bottom: 0;
+}
+
+@media (orientation: portrait) and (min-width:393px) {}
