@@ -900,7 +900,7 @@ section {
 
 .text {
     position: relative;
-    padding: 0 3rem;
+    padding: 0 7%;
     text-align: center;
     line-height: 150%;
     letter-spacing: 2px;
@@ -917,7 +917,7 @@ section {
     }
 
     .text {
-        padding: 0 3.5rem;
+        padding: 0 7%;
         font-size: 2.3rem;
     }
 }
@@ -929,7 +929,7 @@ section {
     }
 
     .text {
-        padding: 0 3.5rem;
+        padding: 0 9%;
         font-size: 3.5rem;
     }
 }
@@ -937,41 +937,88 @@ section {
 @media (orientation: portrait) and (min-width:1000px) {
     .motto {
         font-size: 5rem;
-        letter-spacing: 3px;
-        padding-top: 25%;
-        padding-bottom: 20%;
+
     }
 
     .text {
-        padding: 0 21rem;
+        padding: 0 7%;
         font-size: 4rem;
     }
 }
 
 @media (orientation: landscape) and (min-width:460px) {
     .motto {
-        font-size: 2.3rem;
-        letter-spacing: 3px;
         padding-top: 10%;
         padding-bottom: 8%;
+        font-size: 2.3rem;
     }
 
     .text {
-        padding: 0 12rem;
+        padding: 0 20%;
         font-size: 1.7rem;
     }
 }
 
 @media (orientation: landscape) and (min-width:640px) {
     .motto {
-        font-size: 2.3rem;
-        letter-spacing: 3px;
-        padding-top: 10%;
-        padding-bottom: 8%;
+        padding-top: 8%;
+        padding-bottom: 10%;
+        font-size: 2.6rem;
     }
 
     .text {
-        padding: 0 12rem;
-        font-size: 1.7rem;
+        font-size: 2rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width:730px) {
+    .motto {
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: 2.6rem;
+    }
+}
+
+@media (orientation: landscape) and (max-height:375px) {
+    .motto {
+        padding-bottom: 5%;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1024px) {
+    .motto {
+        padding-bottom: 9%;
+        font-size: 3.9rem;
+    }
+
+    .text {
+        font-size: 3rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1024px) and (min-height:640px) {
+    .motto {
+        padding-top: 14%;
+        padding-bottom: 10%;
+        font-size: 4.1rem;
+        letter-spacing: 2px;
+    }
+
+    .text {
+        font-size: 3.5rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1320px) {
+    .motto {
+        padding-top: 13%;
+        font-size: 4.5rem;
+        letter-spacing: 3px;
+    }
+
+    .text {
+        font-size: 4rem;
     }
 }
