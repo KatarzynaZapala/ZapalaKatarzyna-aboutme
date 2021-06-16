@@ -311,11 +311,12 @@ h2.welcome_function {
 }
 
 section {
-    height: 100vh;
+    /*    height: 100vh;*/
     overflow: hidden;
 }
 
 .features {
+    height: 100vh;
     padding: 0 8%;
     text-align: center;
     max-width: 160rem;
@@ -893,9 +894,11 @@ section {
 .motto {
     position: relative;
     font-size: 3rem;
+    font-weight: 300;
     padding-top: 25%;
     padding-bottom: 20%;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .text {
@@ -1011,6 +1014,7 @@ section {
     }
 }
 
+
 @media (orientation: landscape) and (min-width:1320px) {
     .motto {
         padding-top: 7%;
@@ -1024,3 +1028,52 @@ section {
         font-size: 4rem;
     }
 }
+
+.hobby_title {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.hobby .item {
+    height: 40vh;
+    margin-bottom: 1px;
+    background-position: center;
+    background-size: cover;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../images/fota%20rodzinna.jpg);
+    background-position: top;
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../images/fotoalbum1_1280.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../images/g%C3%B3ry_1280.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../images/kultury_1280.jpg);
+}
+
+.item p {
+    display: none;
+}
+
+
+/*
+.item p {
+    display: block;
+    font-size: 3rem;
+    line-height: 40vh;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, .5);
+}
+*/
