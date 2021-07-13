@@ -1029,6 +1029,11 @@ section {
     }
 }
 
+.hobby {
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
 .hobby_title {
     padding: 20px 0;
     text-align: center;
@@ -1039,9 +1044,10 @@ section {
 
 .hobby .item {
     height: 40vh;
-    margin-bottom: 1px;
-    background-position: center;
+/*    margin-bottom: 1px;
+    */    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hobby .item:nth-of-type(1) {
@@ -1062,24 +1068,77 @@ section {
 }
 
 .item p {
-    display: none;
+    padding: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    text-shadow: 0 0 4px black;
+    position: relative;
+    top: 75%;
+    text-align: center;
+}
+
+
+@media (orientation: portrait) and (min-width:375px) {
+    .item p {
+        font-size: 2.3rem;
+    }
 }
 
 @media (orientation: landscape) and (min-width:533px) {
     .hobby .item {
         float: left;
         width: 50%;
+        margin: 0;
+    }
+
+    .item p {
+        padding: 0;
+        font-size: 2rem;
+        text-align: right;
     }
 }
 
-/*
-.item p {
-    display: block;
-    font-size: 3rem;
-    line-height: 40vh;
-    text-align: center;
-    color: white;
-    text-shadow: 0 0 4px black;
-    background-color: rgba(0, 0, 0, .5);
+@media (orientation: portrait) and (min-width: 600px) {
+    .hobby_title {
+        font-size: 4rem;
+
+    }
+
+    .item p {
+        top: 80%;
+        padding: 10px;
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
 }
-*/
+
+@media (min-width: 1024px) {
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+
+    .item p {
+        display: block;
+        position: relative;
+        top: 0;
+        padding: 0;
+        font-size: 4rem;
+        line-height: 40vh;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 4px black;
+        background-color: rgba(0, 0, 0, .5);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
