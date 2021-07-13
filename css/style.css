@@ -1065,6 +1065,12 @@ section {
     display: none;
 }
 
+@media (orientation: landscape) and (min-width:533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+    }
+}
 
 /*
 .item p {
