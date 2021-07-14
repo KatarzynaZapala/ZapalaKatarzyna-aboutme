@@ -1126,7 +1126,7 @@ section {
 
     .hobby .item {
         height: 50vh;
-        transition: 1s;
+        transition: 2s;
     }
 
     .hobby .item:hover {
